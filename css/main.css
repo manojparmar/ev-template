@@ -201,6 +201,7 @@ min-height: 300px;}
 
 /* search page style */
 aside li:not(.item-heading){border-bottom: 1px solid #040b11; margin-bottom: 2rem;}
+.card-area{width: 32%;}
 /* end search page */
  @media (min-width: 1400px) {
    .left-bg-container,
