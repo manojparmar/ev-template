@@ -10,6 +10,9 @@ body.body {
 .secondary-bg {
    background-color: #30343e !important;
 }
+.bg-light-blue{
+   background-color: #eef9ff;
+}
 .primary-text {
    color: #09c4ff !important;
 }
@@ -18,6 +21,9 @@ body.body {
 }
 .text-blue {
    color: #09c4ff;
+}
+.text-primary{
+   color: #3ba5e0 !important;
 }
 .fs-xs {
    font-size: 0.75rem;
@@ -29,10 +35,19 @@ body.body {
    background-color: #09c4ff;
    border-color: #159fd7;
 }
+.form-check-success.form-check-input{
+   width: 22px;
+   height:22px;
+   margin-top: 0;
+
+}
 .form-check-success.form-check-input:checked {
     background-color: #4da424;
     border-color: #367419;
+    opacity: 1;
+    outline: none;
 }
+
 .btn-primary {
     background-color: #09c4ff;
     /* min-width: 250px; */

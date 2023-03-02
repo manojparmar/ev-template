@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EV | Cart</title>
+    <link
+         href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+         rel="stylesheet"
+         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+         crossorigin="anonymous"
+      />
+      <link href="./css/cart.css" rel="stylesheet" />
+      <link href="./css/common.css" rel="stylesheet" />
+      <link href="./css/main.css" rel="stylesheet" />
+</head>
+<body class="body">
+    <div class="container py-2 py-sm-4">
+        <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-8">
+                <div class="card bg-light-blue">
+                    <ul class="nav nav-tabs justify-content-center text-center py-2 checkout-tabs">
+                        <li class="nav-item">
+                          <a class="nav-link active" data-bs-toggle="tab" href="#addressTab">
+                            <span class="count d-inline-flex rounded-circle justify-content-center align-items-center bg-light position-relative">1</span>
+                            <span class="name d-block text-secondary fs-sm mt-2 fw-bold">Address</span>
+                        </a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" data-bs-toggle="tab" href="#paymentTab">
+                            <span class="count d-inline-flex rounded-circle justify-content-center align-items-center bg-light position-relative">2</span>
+                            <span class="name d-block text-secondary fs-sm mt-2 fw-bold">Payment Option</span></a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" data-bs-toggle="tab" href="#reviewPayTab">
+                            <span class="count d-inline-flex rounded-circle justify-content-center align-items-center bg-light position-relative">3</span>
+                            <span class="name d-block text-secondary fs-sm mt-2 fw-bold">Review & Pay</span>
+                            </a>
+                        </li>
+                      </ul>
+                </div>
+                <div class="card bg-dark">
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="addressTab">
+                            <div class="p-3 p-md-4">
+                                <h1 class="fs-4 mb-4">Your Address
+                                    <button class="btn bg-light text-primary float-end px-4 fs-sm">+ Add New Address</button>
+                                </h1>
+                                <div class="form-check mb-4">
+                                    <input class="form-check-input form-check-success" type="checkbox" value="" id="samebillingaddress" checked>
+                                    <label class="form-check-label ps-2 mt-0 fs-6" for="samebillingaddress">Billing Address will be same
+                                    </label>
+                                </div>
+                                <h2 class="fs-6">Select Delivery Address</h2>
+                                <p class="fs-xs">03 Address Found</p>
+                                <div class="address-block rounded mb-4 position-relative">
+                                    <input class="form-check-input form-check-success" type="radio" value="" id="workaddress" name="addressSection">
+                                    <label class="form-check-label p-2 mt-0 fs-6 pe-5" for="workaddress">
+                                        <div class="d-flex align-items-center mb-2 justify-content-between">
+                                            <div class="address-title">Work 
+                                                <span class="badge bg-light text-success ms-2">default</span>
+                                            </div>
+                                            <div class="actions">
+                                                <a href="#" class="btn btn-link px-3 fs-xs text-light text-decoration-none">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-fill" viewBox="0 0 16 16">
+                                                    <path d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z"/>
+                                                    </svg> 
+                                                    <span class="ps-1 align-middle">Edit</span>
+                                                </a>
+                                                <a href="#" class="btn btn-link px-3 fs-xs text-light text-decoration-none">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-archive-fill" viewBox="0 0 16 16">
+                                                    <path d="M12.643 15C13.979 15 15 13.845 15 12.5V5H1v7.5C1 13.845 2.021 15 3.357 15h9.286zM5.5 7h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1zM.8 1a.8.8 0 0 0-.8.8V3a.8.8 0 0 0 .8.8h14.4A.8.8 0 0 0 16 3V1.8a.8.8 0 0 0-.8-.8H.8z"/>
+                                                </svg>
+                                                <span class="ps-1 align-middle">Remove</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="user-details mb-2">
+                                            <div class="fs-sm">Tarunpal Singh</div>
+                                            <div class="fs-sm">+91 9898989898</div>
+                                        </div>
+
+                                        <div class="user-address">
+                                            <div class="fs-sm">Plot No.86, Defence Enclave, Mohan Garde Uttam Nagar, New Delhi - 110059</div>
+                                        </div>
+                                    </label>
+
+                                </div>
+                                <div class="address-block rounded mb-4 position-relative">
+                                    <input class="form-check-input form-check-success" type="radio" value="" id="homeaddress" name="addressSection">
+                                    <label class="form-check-label p-2 mt-0 fs-6 pe-5" for="homeaddress">
+                                        <div class="d-flex align-items-center mb-2 justify-content-between">
+                                            <div class="address-title">Home 
+                                            </div>
+                                            <div class="actions">
+                                                <a href="#" class="btn btn-link px-3 fs-xs text-light text-decoration-none">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-fill" viewBox="0 0 16 16">
+                                                    <path d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z"/>
+                                                    </svg> 
+                                                    <span class="ps-1 align-middle">Edit</span>
+                                                </a>
+                                                <a href="#" class="btn btn-link px-3 fs-xs text-light text-decoration-none">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-archive-fill" viewBox="0 0 16 16">
+                                                    <path d="M12.643 15C13.979 15 15 13.845 15 12.5V5H1v7.5C1 13.845 2.021 15 3.357 15h9.286zM5.5 7h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1zM.8 1a.8.8 0 0 0-.8.8V3a.8.8 0 0 0 .8.8h14.4A.8.8 0 0 0 16 3V1.8a.8.8 0 0 0-.8-.8H.8z"/>
+                                                </svg>
+                                                <span class="ps-1 align-middle">Remove</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="user-details mb-2">
+                                            <div class="fs-sm">Tarunpal Singh</div>
+                                            <div class="fs-sm">+91 9898989898</div>
+                                        </div>
+
+                                        <div class="user-address">
+                                            <div class="fs-sm">Plot No.86, Defence Enclave, Mohan Garde Uttam Nagar, New Delhi - 110059</div>
+                                        </div>
+
+                                    </label>
+
+                                </div>
+
+                                <div class="address-block rounded mb-4 position-relative">
+                                    <input class="form-check-input form-check-success" type="radio" value="" id="otheraddress" name="addressSection">
+                                    <label class="form-check-label p-2 mt-0 fs-6 pe-5" for="otheraddress">
+                                        <div class="d-flex align-items-center mb-2 justify-content-between">
+                                            <div class="address-title">Other 
+                                            </div>
+                                            <div class="actions">
+                                                <a href="#" class="btn btn-link px-3 fs-xs text-light text-decoration-none">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-fill" viewBox="0 0 16 16">
+                                                    <path d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z"/>
+                                                    </svg> 
+                                                    <span class="ps-1 align-middle">Edit</span>
+                                                </a>
+                                                <a href="#" class="btn btn-link px-3 fs-xs text-light text-decoration-none">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-archive-fill" viewBox="0 0 16 16">
+                                                    <path d="M12.643 15C13.979 15 15 13.845 15 12.5V5H1v7.5C1 13.845 2.021 15 3.357 15h9.286zM5.5 7h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1zM.8 1a.8.8 0 0 0-.8.8V3a.8.8 0 0 0 .8.8h14.4A.8.8 0 0 0 16 3V1.8a.8.8 0 0 0-.8-.8H.8z"/>
+                                                </svg>
+                                                <span class="ps-1 align-middle">Remove</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="user-details mb-2">
+                                            <div class="fs-sm">Tarunpal Singh</div>
+                                            <div class="fs-sm">+91 9898989898</div>
+                                        </div>
+
+                                        <div class="user-address">
+                                            <div class="fs-sm">Plot No.86, Defence Enclave, Mohan Garde Uttam Nagar, New Delhi - 110059</div>
+                                        </div>
+
+                                    </label>
+
+                                </div>
+                            </div> 
+                        </div>
+                        <div class="tab-pane fade" id="paymentTab">...</div>
+                        <div class="tab-pane fade" id="reviewPayTab">...</div>
+                      </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">                
+                <p class="text-white fs-6">Summary</p>
+                <div class="card bg-dark">
+                    <div class="p-3 p-md-4">
+                        <h3 class="fs-sm fw-light">Total Amount Pay to Droom Online</h3>
+                        <div class="fs-2 d-flex align-items-center gap-3 text-white">
+                            <span>₹ 16,637</span>
+                            <span class="px-2 py-1 border-success border-1 bg-light text-success fs-xs rounded-pill">Great! You save ₹1500</span>
+                        </div>
+                        <div class="card bg-light p-2 my-4 rounded-3">
+                            <div class="row my-2 fs-xs text-dark">
+                                <div class="col-6">Token Amount pay online</div>
+                                <div class="col-6 text-end">₹ 17,737</div>
+                            </div>
+                            <div class="row my-2 fs-xs text-success">
+                                <div class="col-6">Total Discount</div>
+                                <div class="col-6 text-end">- ₹ 1100</div>
+                            </div>
+                        </div>
+
+                        <div class="form-check fs-sm">
+                            <input class="form-check-input form-check-success" type="checkbox" value="" id="flexCheckChecked" checked>
+                            <label class="form-check-label ps-2" for="flexCheckChecked">
+                              Personal Accident Insurance: ₹39 <span class="text-blue"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-info-circle-fill" viewBox="0 0 16 16">
+                                <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+                            </svg></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-dark p-3 p-md-4 my-2">
+                    <a href="/checkout.html" class="btn btn-primary w-100">Proceed to Checkout</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"
+    ></script>
+</body>
+</html>

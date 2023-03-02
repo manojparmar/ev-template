@@ -209,6 +209,8 @@ aside li:not(.item-heading){border-bottom: 1px solid #040b11; margin-bottom: 2re
 /* end search page */
 
 .vehicle-pricing-form{width: 75%;}
+
+
  @media (min-width: 1400px) {
    .left-bg-container,
    .right-bg-container {
