@@ -12,18 +12,19 @@
          crossorigin="anonymous"
       />
       <link rel="stylesheet" href="/css/main.css" />
+      <link rel="stylesheet" href="/css/common.css" />
       <link rel="stylesheet" href="./css/flexslider.css">
     </head>
     <body class="body">
         <div class="mb-5">
             <header
-                class="navbar sticky-top bg-body-tertiary d-flex justify-content-between align-items-center gap-5 py-3"
+                class="bg-body-tertiary d-flex justify-content-between align-items-center gap-5 py-3"
             >
                 <div class="container">
                     <div class="w-100">
-                        <nav class="navbar navbar-expand-lg">
+                        <nav class="navbar-expand-lg navbar navbar-dark">
                             <div class="container-fluid">
-                                <a class="navbar-brand text-white" href="/index.html">
+                                <a class="navbar-brand text-white logo-top" href="/index.html">
                                     <img src="https://cdn1.droom.in/photos/images/dcs-web/logo.png" alt="Logo">
                                 </a>
                                 <button
@@ -38,7 +39,7 @@
                                 <span class="navbar-toggler-icon text-white"></span>
                                 </button>
                                 <div
-                                class="collapse navbar-collapse justify-content-end"
+                                class="collapse navbar-collapse justify-content-end bg-dark p-2"
                                 id="navbarNav"
                                 >
                                 <ul class="navbar-nav gap-4">
@@ -193,7 +194,7 @@
                         </div>
                         <div class="row align-items-center">
                             <div class="col-sm-6">
-                                <button class="btn btn-primary text-white fs-5">Order Now</button>
+                                <a href="/cart.html" class="btn btn-primary text-white fs-5">Order Now</a>
                             </div>
                             <div class="col-sm-6"><a href="#" class="text-decoration-none text-blue">Book a Demo Drive</a></div>
                         </div>
@@ -204,7 +205,7 @@
         </div>
 
         <!-- safety feature -->
-        <div class="container">
+        <div class="container safety-feature">
             <div class="row">
                 <div class="col-sm-12 col-md-6 col-lg-6">
                     <img src="https://cdn1.droom.in/photos/images/dcs-web/safety.png" class="w-100" />
@@ -422,7 +423,50 @@
             <!-- our models -->
             <div class="our-models mt-4">
                 <h2 class="text-white mb-4">See how we are changing India</h2>
-
+                <div class="row">
+                    <div class="col-sm-6 col-md-4">
+                        <div class="card bg-transparent text-white">
+                            <a href="/product.html">
+                               <img
+                                  src="https://cdn1.droom.in/photos/images/dcs-web/model2.png"
+                                  alt="Model 2"
+                                  class="w-100 border border-8 border-secondary"
+                               />
+                            </a>
+                            <div class="card-body text-center">
+                               <h5 class="card-title">Model S Plaid</h5>
+                            </div>
+                         </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="card bg-transparent text-white">
+                            <a href="/product.html">
+                               <img
+                                  src="https://cdn1.droom.in/photos/images/dcs-web/model1.png"
+                                  alt="Model 2"
+                                  class="w-100 border border-8 border-secondary"
+                               />
+                            </a>
+                            <div class="card-body text-center">
+                               <h5 class="card-title">Model X Plaid</h5>
+                            </div>
+                         </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="card bg-transparent text-white">
+                            <a href="/product.html">
+                               <img
+                                  src="https://cdn1.droom.in/photos/images/dcs-web/model3.png"
+                                  alt="Model 2"
+                                  class="w-100 border border-8 border-secondary"
+                               />
+                            </a>
+                            <div class="card-body text-center">
+                               <h5 class="card-title">Model Y Plaid</h5>
+                            </div>
+                         </div>
+                    </div>
+                </div>
             </div>
 
             <!-- end models  -->

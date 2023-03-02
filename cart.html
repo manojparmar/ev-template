@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EV | Cart</title>
+    <link
+         href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+         rel="stylesheet"
+         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+         crossorigin="anonymous"
+      />
+      <link href="./css/cart.css" rel="stylesheet" />
+      <link href="./css/common.css" rel="stylesheet" />
+</head>
+<body class="body">
+    <div class="container py-2 py-sm-4">
+        <h1 class="fs-3">Your Cart</h1>
+        <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-8">
+                <p class="text-white-50 fs-6">Product (02 items)</p>
+                <div class="card bg-dark my-3">
+                    <div class="p-3 p-md-4">
+                        <div class="row align-items-center">
+                            <div class="col-6">
+                                <div class="d-flex fs-xs">
+                                    <figure class="product-img">
+                                        <img src="https://cdn1.droom.in/photos/images/dcs-web/model1.png" alt="product" class="w-100" />
+                                    </figure>
+                                    <div class="cart-content">
+                                        <div class="title px-3 pb-3">Maruti Suzuki</div>
+                                        <div class="px-3 fs-6">
+                                            <span>Vehicle Price:</span>
+                                            <span>₹ 4,85,000</span>
+                                        </div>
+                                        <a href="#" class="btn btn-link px-3 fs-xs text-blue text-decoration-none">Know more ></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="d-flex flex-column align-items-end gap-3 justify-content-end">
+                                    <div data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Tooltip on top" class="text-blue">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-circle-fill" viewBox="0 0 16 16">
+                                            <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+                                        </svg>
+                                    </div>
+                                    <div class="text-decoration-line-through">₹ 14,500</div>
+                                    <button class="btn btn-outline-success fs-xs rounded-pill">1 Coupon Applied: FIRST500</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="m-0" />
+                    <div class="d-flex gap-5 p-3 text-white justify-content-end">
+                        <a href="#" class="d-flex align-items-center text-white fs-xs text-decoration-none gap-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/></svg> 
+                            <span>Move to Wishlist</span>
+                        </a>                        
+                          
+                        <a href="#" class="d-flex align-items-center text-white fs-xs text-decoration-none gap-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor" class="bi bi-trash3-fill" viewBox="0 0 16 16">
+                                <path d="M11 1.5v1h3.5a.5.5 0 0 1 0 1h-.538l-.853 10.66A2 2 0 0 1 11.115 16h-6.23a2 2 0 0 1-1.994-1.84L2.038 3.5H1.5a.5.5 0 0 1 0-1H5v-1A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5Zm-5 0v1h4v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5ZM4.5 5.029l.5 8.5a.5.5 0 1 0 .998-.06l-.5-8.5a.5.5 0 1 0-.998.06Zm6.53-.528a.5.5 0 0 0-.528.47l-.5 8.5a.5.5 0 0 0 .998.058l.5-8.5a.5.5 0 0 0-.47-.528ZM8 4.5a.5.5 0 0 0-.5.5v8.5a.5.5 0 0 0 1 0V5a.5.5 0 0 0-.5-.5Z"/>
+                            </svg>
+                            <span>Remove</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">                
+                <p class="text-white fs-6">Summery</p>
+                <div class="card bg-dark">
+                    <div class="p-3 p-md-4">
+                        <h3 class="fs-sm fw-light">Total Amount Pay to Droom Online</h3>
+                        <div class="fs-2 d-flex align-items-center gap-3 text-white">
+                            <span>₹ 16,637</span>
+                            <span class="px-2 py-1 border-success border-1 bg-light text-success fs-xs rounded-pill">Great! You save ₹1500</span>
+                        </div>
+                        <div class="card bg-light p-2 my-4 rounded-3">
+                            <div class="row my-2 fs-xs text-dark">
+                                <div class="col-6">Token Amount pay online</div>
+                                <div class="col-6 text-end">₹ 17,737</div>
+                            </div>
+                            <div class="row my-2 fs-xs text-success">
+                                <div class="col-6">Total Discount</div>
+                                <div class="col-6 text-end">- ₹ 1100</div>
+                            </div>
+                        </div>
+
+                        <div class="form-check fs-sm">
+                            <input class="form-check-input form-check-success" type="checkbox" value="" id="flexCheckChecked" checked>
+                            <label class="form-check-label" for="flexCheckChecked">
+                              Personal Accident Insurance: ₹39 <span class="text-blue"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-info-circle-fill" viewBox="0 0 16 16">
+                                <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+                            </svg></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-dark p-3 p-md-4 my-2">
+                    <button class="btn btn-primary w-100">Proceed to Checkout</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"
+    ></script>
+</body>
+</html>

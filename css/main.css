@@ -1,29 +1,8 @@
-body.body {
-   background-color: #040b11;
-}
-.primary-bg {
-   background-color: #09c4ff !important;
-}
-.bg-success-500{background-color: #edffe5;}
-.secondary-bg{background-color: #30343e!important;}
-.primary-text {
-   color: #09c4ff !important;
-}
-.primary-border {
-   border-color: #09c4ff !important;
-}
-.text-blue {
-   color: #09c4ff;
-}
 .video-el {
    background: url(https://cdn1.droom.in/photos/images/dcs-web/ev-banner.png)
       center / cover no-repeat;
    min-height: 600px;
 }
-.fs-xs {
-   font-size: 0.85rem;
-}
-.fs-sm{font-size: 0.90rem;}
 .custom-tabs{width: 50%;}
 .custom-tabs.nav-tabs {
    border-radius: 20px;
@@ -48,56 +27,41 @@ body.body {
    position: relative;
 }
 .inner-items {
+   position: absolute;
    left: 3rem;
    top: 3rem;
    width: 30%;
 }
+.safety-feature .inner-items {
+   position: static;
+}
 .inner-items ul li p {
    color: #acaaaa;
 }
-.btn-primary {
-   background-color: #09c4ff;
-   /* min-width: 250px; */
-   padding: 10px 25%;
-   font-size: 1rem;
-}
-.btn-primary:hover,
-.btn-primary:focus{background-color: #159FD7;}
+.image-container .borders::before,.image-container .borders::after,.image-container::before,.image-container::after{content: ""; position: absolute; background-color: #09c4ff;}
 .image-container .borders::before {
-   content: "";
-   background-color: #09c4ff;
    width: 50%;
    height: 15px;
    left: 25%;
    top: 0;
-   position: absolute;
 }
 .image-container .borders::after {
-   content: "";
-   background-color: #09c4ff;
    width: 50%;
    height: 15px;
    left: 25%;
    bottom: 0;
-   position: absolute;
 }
 .image-container::before {
-   content: "";
-   background-color: #09c4ff;
    width: 15px;
    height: 80%;
    left: 0;
    top: 10%;
-   position: absolute;
 }
 .image-container::after {
-   content: "";
-   background-color: #09c4ff;
    width: 15px;
    height: 80%;
    right: 0;
    top: 10%;
-   position: absolute;
 }
 .my-select select {
    position: relative;
@@ -238,8 +202,13 @@ aside li:not(.item-heading){border-bottom: 1px solid #040b11; margin-bottom: 2re
 .list-item-content .irs--flat .irs-single:before{border-top-color: #09c4ff;}
 .list-item-content .irs--flat .irs-min, 
 .list-item-content .irs--flat .irs-max{color: #040b11;}
+.list-item-content .irs--flat .irs-from, 
+.list-item-content .irs--flat .irs-to, 
+.list-item-content .irs--flat .irs-single{font-size: 12px;}
 
 /* end search page */
+
+.vehicle-pricing-form{width: 75%;}
  @media (min-width: 1400px) {
    .left-bg-container,
    .right-bg-container {
@@ -257,8 +226,37 @@ aside li:not(.item-heading){border-bottom: 1px solid #040b11; margin-bottom: 2re
 }
 @media(max-width: 1024px){
    .custom-tabs{width: 100%;}
+   .logo-top{width: 70px; overflow: hidden;}
+   .btn-primary{padding: 10px 10%;}
+   .mobility-section{
+      position: static;
+      left: 0;
+      top: 50%;
+      transform:none
+   }
+   .inner-items {
+      position: static;
+      left: 3rem;
+      top: 3rem;
+      width: 100%;
+   }
+   .vehicle-pricing-form{width: 100%; margin-bottom: 2rem;}
+   .image-container .borders::before {
+      height: 8px;
+   }
+   .image-container .borders::after {
+      height: 8px;
+   }
+   .image-container::before {
+      width: 8px;
+   }
+   .image-container::after {
+      width: 8px;
+   }
+   .left-bg-container{padding: 10px;}
 }
 @media (max-width: 767px){
+   .card-area{width: 50%;}
    .model-detail{width: 100%;}
    .product-details{padding-left: 0rem;}
    .split-bg-wrapper{flex-direction: column;}
@@ -266,6 +264,11 @@ aside li:not(.item-heading){border-bottom: 1px solid #040b11; margin-bottom: 2re
    .mobility{width: 100%;}
    .compare-list li{width: 100%;}
    .compare-list{flex-direction: column;}
+   .view-breakup-el{height: auto;}
+}
+@media (max-width: 640px){
+   .card-area{width: 100%;}
+   .btn-primary{width: 100%;}
 }
 /*
 @media (min-width: 1200px){
